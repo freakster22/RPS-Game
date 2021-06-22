@@ -1,4 +1,52 @@
 body{
-    color:blue;
+    color:rgb(184, 184, 218);
     background-color: black;
+}
+header{
+    color: cornsilk;
+    font-size: 3rem;
+    margin: 3rem 1rem 2rem 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1rem wheat;
+}
+.body{
+    flex: 1;
+    flex-direction: row;
+    height: 100vh;
+    width: fit-content;
+}
+.scoreboard{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: space-evenly;
+}
+.win{
+    order: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+.game{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.player{
+    order: 1;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-radius: 20%;
+    background-color: rgb(4, 41, 43);
 }
