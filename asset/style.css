@@ -1,6 +1,7 @@
 body{
     color:rgb(184, 184, 218);
     background-color: black;
+    /*height: 100vh;*/
 }
 header{
     color: cornsilk;
@@ -8,42 +9,39 @@ header{
     margin: 3rem 1rem 2rem 1rem;
     padding: 0.5rem;
     text-align: center;
-    border: 1rem wheat;
-}
-.body{
-    flex: 1;
-    flex-direction: row;
-    height: 100vh;
-    width: fit-content;
+    border: 0.2rem solid wheat;
 }
 .scoreboard{
     display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    justify-content: space-evenly;
+    border-bottom: 0.1rem solid wheat;
 }
 .win{
-    order: 1;
     flex-grow: 1;
     text-align: center;
+    border-bottom: 0.1rem solid wheat;
 }
 .game{
     display: flex;
     flex-direction: row;
-    position: relative;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+    border-bottom: 0.1rem solid wheat;
 }
 .player{
-    order: 1;
     flex-grow: 1;
-    align-items: center;
     text-align: center;
-    flex-direction: column;
+    margin-top: auto;
 }
-
+.button{
+    font-size: 4.5rem;
+    border-radius: 50%;
+    background-color: tomato;
+    margin: auto 2rem auto 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.button:active{
+    box-shadow: 2rem teal;
+}
 footer{
-    display: flex;
     position: absolute;
     bottom: 0;
     text-align: center;
